@@ -33,6 +33,7 @@ a{
     --text: rgba(0, 0, 0, 0.8);
     --textWeight: 400;
     --bgcolor: #fff;
+    
 }
 /* Yuqoridagi asos prapertylarni to'liq tushunib oling */
 
@@ -51,3 +52,50 @@ a{
 /* Dilnoza start */
 
 /* Dilnoza end */
+@media screen and (min-width: 1366px) {
+    .site{
+        max-width: 1500px;
+        margin: auto;
+        
+    }
+   
+    
+}
+@media screen and (max-width: 1024px) {
+    .site{
+        max-width: 1024px;
+ 
+    }
+ 
+    
+}
+@media screen and (max-width: 768px) {
+    .site{
+        max-width: 768px;
+       
+    }
+    
+    
+}
+@media screen and (max-width: 425px) {
+    .site{
+        max-width: 425px;
+       
+    }
+    
+}
+@media screen and (max-width: 375px) {
+    .site{
+        max-width: 375px;
+       
+    }
+    
+}
+@media screen and (max-width: 320px) {
+    .site{
+        max-width: 320px;
+        
+    }
+    
+}
+
