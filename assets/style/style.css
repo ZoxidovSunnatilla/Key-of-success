@@ -1,0 +1,53 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    height: 100%;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.site{
+    width: 100%;
+    max-width: 1440px;
+    position: relative;
+}
+:root{
+    --titleText: #000;
+    --titleWeight: 700;
+    --text: rgba(0, 0, 0, 0.8);
+    --textWeight: 400;
+    --bgcolor: #fff;
+}
+/* Yuqoridagi asos prapertylarni to'liq tushunib oling */
+
+/* Sunnat start */
+
+/* Sunnat end */
+/* Husniddin start */
+
+/* Husniddin end */
+/* Azam start */
+
+/* Azam end */
+/* Abbos start */
+
+/* Abbos end */
+/* Dilnoza start */
+
+/* Dilnoza end */
