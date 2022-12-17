@@ -1,45 +1,150 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-ul,ol{
+
+ul,
+ol {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.container{
+
+.container {
     width: 80%;
     margin: auto;
     height: 100%;
 }
-.flex{
+
+.flex {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
 }
-.site{
+
+.site {
     width: 100%;
     max-width: 1440px;
     position: relative;
 }
-:root{
+
+:root {
     --titleText: #000;
     --titleWeight: 700;
     --text: rgba(0, 0, 0, 0.8);
     --textWeight: 400;
     --bgcolor: #fff;
-    
+
 }
+
 /* Yuqoridagi asos prapertylarni to'liq tushunib oling */
 
 /* Sunnat start */
+header {
+    height: 100vh;
+    background-color: var(--bgcolor);
+    position: relative;
+}
 
-/* Sunnat end */
+header .nav {
+    height: auto;
+    width: 100%;
+    background-color: var(--bgcolor);
+    position: sticky;
+    top: 0px;
+    left: 0;
+    border-bottom: 1px solid #000;
+    padding: 20px 0px;
+    opacity: 0;
+    transition: 1s;
+}
+
+header .nav>.nav-header {
+    display: inline;
+}
+header .nav>.nav-header>.nav-title{
+    display: inline-block;
+}
+header .nav>.nav-header>.nav-title img {
+    width: 70px;
+    height: 70px;
+}
+
+header .nav>.nav-btn {
+    display: none;
+}
+
+header .nav>.nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+    padding-top: 25px;
+}
+
+header .nav>.nav-links>a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text);
+    margin-left: 25px;
+}
+
+header .nav>#nav-check {
+    display: none;
+}
+
+header .main {
+    width: 100%;
+    height: 70vh;
+    flex-direction: column;
+}
+
+header .typing-demo {
+    animation: typing 3s steps(60, end);
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 100px;
+    text-align: center;
+    color: var(--titleText);
+    font-weight: var(--titleWeight);
+}
+
+header .main p {
+    color: var(--titleText);
+    font-size: 50px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    max-width: 100%;
+    display: inline-block;
+    animation: typing 4s steps(60, end);
+    animation-delay: 2s;
+}
+
+
+
+@keyframes typing {
+    from {
+        max-width: 0%;
+    }
+
+    to {
+        max-width: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        opacity: 0;
+    }
+}
+
+/* Sunnat  end */
 /* Husniddin start */
 
 /* Husniddin end */
@@ -53,49 +158,325 @@ a{
 
 /* Dilnoza end */
 @media screen and (min-width: 1366px) {
-    .site{
+    .site {
         max-width: 1500px;
         margin: auto;
-        
+
     }
-   
-    
-}
-@media screen and (max-width: 1024px) {
-    .site{
-        max-width: 1024px;
- 
-    }
- 
-    
-}
-@media screen and (max-width: 768px) {
-    .site{
-        max-width: 768px;
-       
-    }
-    
-    
-}
-@media screen and (max-width: 425px) {
-    .site{
-        max-width: 425px;
-       
-    }
-    
-}
-@media screen and (max-width: 375px) {
-    .site{
-        max-width: 375px;
-       
-    }
-    
-}
-@media screen and (max-width: 320px) {
-    .site{
-        max-width: 320px;
-        
-    }
-    
+
+
 }
 
+@media screen and (max-width: 1024px) {
+    .site {
+        max-width: 1024px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .site {
+        max-width: 768px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 425px) {
+    .site {
+        max-width: 425px;
+
+    }
+    header .typing-demo {
+        animation: typing 3s steps(60, end);
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 45px;
+        text-align: center;
+        color: var(--titleText);
+        font-weight: var(--titleWeight);
+    }
+
+    header .main p {
+        color: var(--titleText);
+        font-size: 38px;
+        margin: 10px 0 0 0px;
+        white-space: nowrap;
+        overflow-wrap: break-word;
+        overflow: hidden;
+        max-width: 100%;
+        display: inline-block;
+        animation: typing 4s steps(60, end);
+        animation-delay: 2s;
+    }
+
+    header .container {
+        width: 100%;
+        margin: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 100%;
+    }
+    header .nav{
+        padding: 10px 0px;
+    }
+    header .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        margin-top: 20px;
+    }
+
+    header .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    header .nav>.nav-btn>label:hover,
+    header .nav #nav-check:checked~.nav-btn>label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    header .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #000;
+    }
+
+    header .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color:   transparent;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+        padding-top: 0;
+    }
+
+    header .nav>.nav-links>a {
+        display: block;
+        width: auto;
+        padding: 10px 0px 20px 10px;
+    }
+
+
+    header .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    header .nav>#nav-check:checked~.nav-links {
+        height: calc(30vh - 50px);
+        overflow-y: auto;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .site {
+        max-width: 375px;
+
+    }
+
+    header .container {
+        width: 100%;
+        margin: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 100%;
+    }
+
+    header .typing-demo {
+        animation: typing 3s steps(60, end);
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 45px;
+        text-align: center;
+        color: var(--titleText);
+        font-weight: var(--titleWeight);
+    }
+
+    header .main p {
+        color: var(--titleText);
+        font-size: 38px;
+        margin: 10px 0 0 0px;
+        white-space: nowrap;
+        overflow-wrap: break-word;
+        overflow: hidden;
+        max-width: 100%;
+        display: inline-block;
+        animation: typing 4s steps(60, end);
+        animation-delay: 2s;
+    }
+
+    header .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        margin-top: 20px;
+    }
+
+    header .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    header .nav>.nav-btn>label:hover,
+    header .nav #nav-check:checked~.nav-btn>label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    header .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #000;
+    }
+    header .nav>.nav-title>img{
+        width: 60px;
+        height: 60px;
+    }
+    header .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #e3e3e3;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 70px;
+        left: 0px;
+        padding-top: 0;
+    }
+
+    header .nav>.nav-links>a {
+        display: block;
+        width: auto;
+        padding: 10px 0px 20px 10px;
+    }
+
+    header .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    header .nav>#nav-check:checked~.nav-links {
+        height: calc(30vh - 50px);
+        overflow-y: auto;
+    }
+
+
+}
+
+@media screen and (max-width: 320px) {
+    .site {
+        max-width: 320px;
+
+    }
+
+    header .container {
+        width: 100%;
+        margin: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 100%;
+    }
+
+    header .typing-demo {
+        animation: typing 3s steps(60, end);
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 35px;
+        text-align: center;
+        color: var(--titleText);
+        font-weight: var(--titleWeight);
+    }
+
+    header .main p {
+        color: var(--titleText);
+        font-size: 32px;
+        margin: 10px 0 0 0px;
+        white-space: nowrap;
+        overflow-wrap: break-word;
+        overflow: hidden;
+        max-width: 100%;
+        display: inline-block;
+        animation: typing 4s steps(60, end);
+        animation-delay: 2s;
+    }
+
+    header .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        margin-right: 20px;
+    }
+    header .nav>.nav-header>.nav-title img {
+        width: 60px;
+        height: 60px;
+    }
+
+    header .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    header .nav>.nav-btn>label:hover,
+    header .nav #nav-check:checked~.nav-btn>label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    header .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #000;
+    }
+
+    header .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #e3e3e3;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 70px;
+        left: 0px;
+        padding-top: 0;
+    }
+
+    header .nav>.nav-links>a {
+        display: block;
+        width: auto;
+        padding: 10px 0px 20px 10px;
+    }
+
+
+    header .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    header .nav>#nav-check:checked~.nav-links {
+        height: calc(30vh - 50px);
+        overflow-y: auto;
+    }
+
+
+
+
+}
