@@ -67,9 +67,11 @@ header .nav {
 header .nav>.nav-header {
     display: inline;
 }
-header .nav>.nav-header>.nav-title{
+
+header .nav>.nav-header>.nav-title {
     display: inline-block;
 }
+
 header .nav>.nav-header>.nav-title img {
     width: 70px;
     height: 70px;
@@ -152,6 +154,72 @@ header .main p {
 
 /* Azam end */
 /* Abbos start */
+.section-three .logo {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-three .contact_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.section-three .contact_map,
+.contact_register {
+    max-width: 400px;
+    width: 100%;
+}
+
+
+.section-three .register_item {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.section-three .info {
+    outline: none;
+    font-size: 12px;
+    width: 100%;
+    margin: 10px 0;
+    display: block;
+    padding: 10px 0px;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+.section-three .message_info {
+    padding: 20px 0px;
+
+}
+
+.section-three .contact_register {
+    padding-left: 100px;
+}
+
+.section-three .btn_register {
+    background: #000;
+    border: 2px solid #000;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 60px;
+    border-radius: 10px;
+}
+
+.section-three .btn_register:hover {
+    background: #fff;
+    border: 2px solid #000;
+    color: #000;
+    font-size: 18px;
+    padding: 8px 60px;
+    border-radius: 10px;
+    transition: .6s;
+    cursor: pointer;
+}
 
 /* Abbos end */
 /* Dilnoza start */
@@ -173,6 +241,36 @@ header .main p {
 
     }
 
+    .section-three .contact_items {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .section-three .container {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .section-three .contact_items iframe {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 30px;
+    }
+
+    .section-three .contact_register {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .section-three .info {
+        width: 100%;
+    }
+
+    .section-three .btn_register {
+        width: 100%;
+    }
+
 
 }
 
@@ -182,6 +280,15 @@ header .main p {
 
     }
 
+    .section-three .contact_items {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .section-three .contact_map,
+    .contact_register {
+        margin: 0 auto;
+    }
 
 }
 
@@ -190,6 +297,35 @@ header .main p {
         max-width: 425px;
 
     }
+
+    .section-three .contact_items {
+        flex-direction: column;
+    }
+
+    .section-three .container {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .section-three .contact_items iframe {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 30px;
+    }
+
+    .section-three .contact_register {
+        width: 100%;
+    }
+
+    .section-three .info {
+        width: 100%;
+    }
+
+    .section-three .btn_register {
+        width: 100%;
+    }
+
     header .typing-demo {
         animation: typing 3s steps(60, end);
         white-space: nowrap;
@@ -220,9 +356,11 @@ header .main p {
         padding-right: 15px;
         height: 100%;
     }
-    header .nav{
+
+    header .nav {
         padding: 10px 0px;
     }
+
     header .nav>.nav-btn {
         display: inline-block;
         position: absolute;
@@ -254,7 +392,7 @@ header .main p {
         position: absolute;
         display: block;
         width: 100%;
-        background-color:   transparent;
+        background-color: transparent;
         height: 0px;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
@@ -344,10 +482,12 @@ header .main p {
         height: 10px;
         border-top: 2px solid #000;
     }
-    header .nav>.nav-title>img{
+
+    header .nav>.nav-title>img {
         width: 60px;
         height: 60px;
     }
+
     header .nav>.nav-links {
         position: absolute;
         display: block;
@@ -423,6 +563,7 @@ header .main p {
         top: 0px;
         margin-right: 20px;
     }
+
     header .nav>.nav-header>.nav-title img {
         width: 60px;
         height: 60px;
