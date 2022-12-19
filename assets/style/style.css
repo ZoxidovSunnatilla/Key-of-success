@@ -150,9 +150,39 @@ header .main p {
 /* Husniddin start */
 
 /* Husniddin end */
-/* Azam start */
+/* <--=============== Azam start ===============--> */
+.section_two .box_textImg {
+    margin: 15px 0;
+}
 
-/* Azam end */
+.section_two .box_texts {
+    padding: 0 15px;
+}
+
+.section_two .box_texts,
+.box_img {
+    width: 50%;
+}
+
+.section_two .title {
+    color: var(--titleText);
+    font-size: 50px;
+    font-weight: var(--titleWeight);
+    margin-bottom: 15px;
+}
+
+.section_two .text {
+    color: var(--text);
+    font-weight: var(--textWeight);
+}
+
+.section_two .photo {
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* <--=============== Azam end ===============--> */
+
 /* Abbos start */
 .section-three .logo {
     font-size: 30px;
@@ -223,22 +253,17 @@ header .main p {
 
 /* Abbos end */
 /* Dilnoza start */
-
 /* Dilnoza end */
 @media screen and (min-width: 1366px) {
     .site {
         max-width: 1500px;
         margin: auto;
-
     }
-
-
 }
 
 @media screen and (max-width: 1024px) {
     .site {
         max-width: 1024px;
-
     }
 
     .section-three .contact_items {
@@ -277,8 +302,14 @@ header .main p {
 @media screen and (max-width: 768px) {
     .site {
         max-width: 768px;
-
     }
+
+    /* <!--=============== Azam start ===============--> */
+    .section_two .title {
+        font-size: 30px;
+    }
+
+    /* <!--=============== Azam end ===============--> */
 
     .section-three .contact_items {
         flex-direction: row;
@@ -296,34 +327,6 @@ header .main p {
     .site {
         max-width: 425px;
 
-    }
-
-    .section-three .contact_items {
-        flex-direction: column;
-    }
-
-    .section-three .container {
-        width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .section-three .contact_items iframe {
-        width: 100%;
-        height: 400px;
-        margin-bottom: 30px;
-    }
-
-    .section-three .contact_register {
-        width: 100%;
-    }
-
-    .section-three .info {
-        width: 100%;
-    }
-
-    .section-three .btn_register {
-        width: 100%;
     }
 
     header .typing-demo {
@@ -417,6 +420,49 @@ header .main p {
         overflow-y: auto;
     }
 
+    /* <!--=============== Azam start ===============--> */
+    .section_two .box_texts,
+    .box_img {
+        width: 100%;
+    }
+
+    .section_two .flex {
+        display: block;
+    }
+
+    .section_two .title {
+        font-size: 30px;
+    }
+
+    /* <!--=============== Azam end ===============--> */
+
+    .section-three .contact_items {
+        flex-direction: column;
+    }
+
+    .section-three .container {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .section-three .contact_items iframe {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 30px;
+    }
+
+    .section-three .contact_register {
+        width: 100%;
+    }
+
+    .section-three .info {
+        width: 100%;
+    }
+
+    .section-three .btn_register {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -616,8 +662,4 @@ header .main p {
         height: calc(30vh - 50px);
         overflow-y: auto;
     }
-
-
-
-
 }
